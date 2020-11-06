@@ -4,5 +4,4 @@ USER root
 
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections && \
     apt-get -y update && \
-    apt-get -y upgrade && \
-    apt-get -y install apt-utils dialog jq libncurses5 make nodejs uuid-runtime
+    apt-get -y install apt-utils dialog jq libncurses5 make maven nodejs uuid-runtime
